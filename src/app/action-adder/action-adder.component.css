@@ -1,0 +1,59 @@
+::ng-deep .mat-form-field-underline {
+  display: none;
+}
+
+.day-picker{
+  margin-top: 15px;
+}
+
+.picker{
+  width: 100px;
+}
+
+.action-card{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-action-card{
+  width: 100%;
+}
+
+.action-cards-box{
+  margin-top: 15px;
+}
+
+.date-picker{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center{
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.day-swapper{
+  margin-bottom: 15px;
+}
+
+::ng-deep .mat-chip-list-wrapper{
+  justify-content: space-between;
+}
+
+mat-card{
+  margin-top: 15px;
+  text-align: center;
+}
+
+.hr-skin{
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right,
+  rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0));
+}

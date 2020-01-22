@@ -1,0 +1,15 @@
+.action-selector--alignment{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-selector__combo-box{
+  margin-right: 15px;
+}
+
+.time-box--alignment{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

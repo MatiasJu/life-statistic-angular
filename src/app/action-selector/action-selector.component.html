@@ -1,0 +1,31 @@
+<div class="action-selector--alignment">
+  <div class="action-selector__combo-box">
+    <mat-form-field>
+      <input type="text" placeholder="Action" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+      <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+        <mat-option *ngFor="let option of filteredOptions" [value]="option">
+          {{option}}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </div>
+
+  <div><button mat-raised-button><mat-icon>add</mat-icon></button></div>
+</div>
+
+<!--Time box doc: https://www.npmjs.com/package/ngx-material-time-select#usage-->
+<div class="time-box--alignment">
+  <mat-form-field>
+    <input matInput placeholder="From" [matTimeSelect]="timeSelectFrom">
+    <mat-time-select-toggle matSuffix [for]="timeSelectFrom"></mat-time-select-toggle>
+    <mat-time-select #timeSelectFrom></mat-time-select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="To" [matTimeSelect]="timeSelectTo">
+    <mat-time-select-toggle matSuffix [for]="timeSelectTo"></mat-time-select-toggle>
+    <mat-time-select #timeSelectTo></mat-time-select>
+  </mat-form-field>
+</div>
+
+<app-footer-navigation></app-footer-navigation>

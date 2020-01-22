@@ -1,0 +1,18 @@
+.footer{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer__cancel-btn{
+  margin-left: 20px;
+}
+
+.footer__save-btn{
+  margin-right: 20px;
+}

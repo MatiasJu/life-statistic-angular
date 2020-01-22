@@ -1,0 +1,44 @@
+<div>
+  <mat-chip-list class="mat-chip-list-flex">
+    <mat-chip>
+      <mat-form-field class="picker">
+        <input matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </mat-chip>
+
+    <mat-chip class="time-left">-24hs</mat-chip>
+  </mat-chip-list>
+</div>
+
+<div class="day-swapper">
+  <mat-chip-list class="center">
+    <mat-chip><mat-icon>chevron_left</mat-icon></mat-chip>
+    <mat-chip>Domingo</mat-chip>
+    <mat-chip><mat-icon>chevron_right</mat-icon></mat-chip>
+  </mat-chip-list>
+</div>
+
+<hr class="hr-skin">
+
+<div class="action-cards-box">
+  <button mat-raised-button class="add-action-card"><mat-icon>add</mat-icon></button>
+  <mat-card class="action-card">
+    <mat-icon>sports_esports</mat-icon>
+    <span>Gaming</span>
+    <mat-icon>more_vert</mat-icon>
+  </mat-card>
+  <mat-card class="action-card">
+    <mat-icon>directions_walk</mat-icon>
+    <span>Walking</span>
+    <mat-icon>more_vert</mat-icon>
+  </mat-card>
+  <mat-card class="action-card">
+    <mat-icon>local_pizza</mat-icon>
+    <span>Eating</span>
+    <mat-icon>more_vert</mat-icon>
+  </mat-card>
+</div>
+
+
